@@ -3,6 +3,7 @@ export const characterNames={nova:'Agent Nova',pip:'Agent Pip',widget:'Widget th
 export function characterArt(p){
  if(p.art==='custom')return null;
  if(Object.hasOwn(characterNames,p.art))return p.art;
+ if(Object.hasOwn(characterNames,p.illustration))return p.illustration;
  // Upgrade older saved agency casts without modifying their saved geometry.
  if(p.kind==='agent')return p.colour==='#a73245'||p.shapes?.some(s=>s.colour==='#7d243f')?'pip':'nova';
  return p.kind==='robot'?'widget':p.kind==='alien'?'noodle':null;
