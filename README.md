@@ -17,3 +17,6 @@ Full-window illustrated headquarters and rooftop sets with a collapsible floatin
 
 ### Matching character artwork
 The agency cast now uses a transparent, shaded character atlas that matches the illustrated headquarters and rooftop sets. Each character has a standing and waving pose. Shadows use the character's actual alpha silhouette and the existing perspective projection. Movement, rotation, scaling, recording and older saved agency casts retain their behavior. In Build, switch between the illustrated character and editable geometry; changing a shape uses the shape view so every edit is visible.
+
+### Complete material and scenery pass
+All stage elements now belong to the same dimensional agency world: the movable brass spotlight, six illustrated gadgets and their vault previews, textured oval/star construction pieces, shaded enamel box/triangle pieces and glass-like custom puppet eyes. The modular builder remains editable and supports undo/redo. The three former paper/coral/cosmic scenes now open a botanical lab, reef observatory and star chamber; the saved scene IDs are preserved. Gadget identity is stored separately from its editable name, so renamed props survive save/load with their artwork intact. No external images or remote image service is required at runtime.
